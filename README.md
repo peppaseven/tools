@@ -10,7 +10,8 @@ Share some tools to improve work effeciency.
 >>这个工具主要用来唤醒局域网内支持WOL功能的电脑，可以用一直工作的树莓派唤醒局域网内其他休眠的机器。
 
 2.dns_ip_update.py
-  这个是用来更新域名解析记录的工具，因为外网IP经常变化，需要定期更新域名。记得首先要安装tencent cloud python包。
+  这个是用来更新域名解析记录的工具，因为外网IP经常变化，需要定期更新域名。
+  记得首先要安装tencent cloud python包。
   pip install qcloudapi-sdk-python
   可以简单的加到计划任务中，例如：
   1.sudo crontab -e
