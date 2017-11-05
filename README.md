@@ -14,10 +14,10 @@ Share some tools to improve work effeciency.<br>
 
   这个是用来更新域名解析记录的工具，因为外网IP经常变化，需要定期更新域名。<br>
   记得首先要安装tencent cloud python包。<br>
-  pip install qcloudapi-sdk-python<br>
+  `pip install qcloudapi-sdk-python`<br>
   可以简单的加到计划任务中，例如：<br>
-  1.sudo crontab -e<br>
-  2.选择vi<br>
+  1.`sudo crontab -e`<br>
+  2.选择`vi`<br>
   3.增加一行到最下面<br>
-  30 12 * * * python /home/pi/workshop/tools/dns_ip_update.py<br>
+  `30 12 * * * python /home/pi/workshop/tools/dns_ip_update.py`<br>
   每天12点30分更新一次ip,本地会cache一次ip地址，所以，如果地址没有变化，不会请求更新服务器，减少被服务器拒绝的可能。可以根据需要增加频率。<br>
